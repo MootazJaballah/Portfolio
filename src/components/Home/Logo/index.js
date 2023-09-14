@@ -1,52 +1,41 @@
-import { useEffect, useRef } from 'react'
-import gsap from 'gsap-trial'
-import DrawSVGPlugin from 'gsap-trial/DrawSVGPlugin'
-import LogoS from '../../../assets/images/pic.png'
-import './index.scss'
+import React, { useEffect, useRef, useState } from 'react';
+import LogoS from '../../../assets/images/pic.png';
+import './index.scss';
 
 const Logo = () => {
-    const bgRef = useRef()
-    const solidLogoRef = useRef()
+    const bgRef = useRef(null);
+    const solidLogoRef = useRef(null);
+    const [showSolidLogo, setShowSolidLogo] = useState(false);
 
     useEffect(() => {
-        gsap.config({ trialWarn: false });
-        gsap.registerPlugin(DrawSVGPlugin)
+        // Initial animation: Opacity fade in for bgRef
+        bgRef.current.style.transition = 'opacity 1s';
+        setTimeout(() => {
+            bgRef.current.style.opacity = '1';
+            // Trigger the solidLogo animation after a delay
+            setTimeout(() => {
+                setShowSolidLogo(true);
+            }, 2000); // Delay of 2 seconds
+        }, 0);
 
-        gsap
-            .timeline()
-            .to(bgRef.current, {
-                duration: 1,
-                opacity: 1,
-            })
-            .from(solidLogoRef.current, {
-                drawSVG: 0,
-                duration: 20,
-            })
-
-        gsap.fromTo(
-            solidLogoRef.current,
-            {
-                opacity: 0,
-            },
-            {
-                opacity: 0.4,
-                delay: 2,
-                duration: 5,
-            }
-        )
-    }, [])
+        // Solid Logo animation
+        if (showSolidLogo) {
+            solidLogoRef.current.style.transition = 'stroke-dashoffset 20s ease-in-out, opacity 5s ease-in-out';
+            solidLogoRef.current.style.strokeDashoffset = '0';
+            solidLogoRef.current.style.opacity = '0.4';
+        }
+    }, [showSolidLogo]);
 
     return (
         <div className="logo-container" ref={bgRef}>
             <img
-                className="solid-logo"
+                className={`solid-logo ${showSolidLogo ? 'show' : ''}`}
                 ref={solidLogoRef}
                 src={LogoS}
-                alt="JavaScript,  Developer"
+                alt="JavaScript, Developer"
             />
-            
         </div>
-    )
-}
+    );
+};
 
-export default Logo
+export default Logo;
