@@ -34,6 +34,9 @@ const Home = () => {
     '.',
   ]
 
+  const engeneerArray = ['M', 'a', 'c', 'h', 'i', 'n', 'e', ' ', 'L', 'e', 'a', 'r', 'n', 'i', 'n', 'g', ' ', '&', ' ', 'D', 'a', 't', 'a', ' ', 'S', 'c', 'i', 'e', 'n', 'c', 'e', ' ', 'E', 'n', 'g', 'i', 'n', 'e', 'e', 'r'];
+
+
   useEffect(() => {
     setTimeout(() => {
       setLetterClass('text-animate-hover')
@@ -67,8 +70,14 @@ const Home = () => {
               strArray={jobArray}
               idx={15}
             />
+            <br />
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={engeneerArray}
+              idx={18}
+            />
           </h1>
-          <h2>Front End Developer / JavaScript Expert / Youtuber</h2>
+          <h2>Mern-Stack Developer / Flutter Expert / Freelancer</h2>
           <Link to="/contact" className="flat-button">
             CONTACT ME
           </Link>

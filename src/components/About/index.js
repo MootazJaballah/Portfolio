@@ -1,12 +1,11 @@
 import { useEffect, useState } from 'react'
 import {
-    faAngular,
-    faCss3,
     faGitAlt,
-    faHtml5,
     faJsSquare,
     faReact,
+    faNodeJs,
 } from '@fortawesome/free-brands-svg-icons'
+import { faBrain, faServer } from '@fortawesome/free-solid-svg-icons';
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -32,32 +31,21 @@ const About = () => {
                             idx={15}
                         />
                     </h1>
-                    <p>
-                        I'm a very ambitious front-end developer looking for a role in an
-                        established IT company with the opportunity to work with the latest
-                        technologies on challenging and diverse projects.
-                    </p>
                     <p align="LEFT">
-                        I'm quiet confident, naturally curious, and perpetually working on
-                        improving my chops one design problem at a time.
-                    </p>
-                    <p>
-                        If I need to define myself in one sentence that would be a family
-                        person, father of a beautiful daughter, a sports fanatic,
-                        photography enthusiast, and tech-obsessed!!!
+                        I graduated from ISIMM (Higher Institute of Computer Science and Mathematics) in Monastir. Currently, I am a second-year student pursuing a degree in artificial intelligence engineering. My specialization lies in both front-end and back-end development, as well as website creation. Furthermore, I possess strong skills in designing mobile applications and video games. In search of new opportunities, I am determined to leverage my knowledge and expertise to make a meaningful contribution in the field.
                     </p>
                 </div>
 
                 <div className="stage-cube-cont">
                     <div className="cubespinner">
                         <div className="face1">
-                            <FontAwesomeIcon icon={faAngular} color="#DD0031" />
+                            <FontAwesomeIcon icon={faNodeJs} color="green" />
                         </div>
                         <div className="face2">
-                            <FontAwesomeIcon icon={faHtml5} color="#F06529" />
+                            <FontAwesomeIcon icon={faBrain} color="#0B6FB4" />
                         </div>
                         <div className="face3">
-                            <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
+                            <FontAwesomeIcon icon={faServer} color="#011E2A" />
                         </div>
                         <div className="face4">
                             <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
