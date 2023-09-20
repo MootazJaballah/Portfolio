@@ -71,7 +71,7 @@ const Portfolio = () => {
                         <div className="content">
                             <p className="title">{port.name}</p>
                             <h4 className="description">{truncateParagraph(port.description)}</h4>
-                            <button className="btn" onClick={() => window.open(port.githubUrl)}>
+                            <button className="btn" onClick={() => window.open(`https://${port.githubUrl}`)}>
                                 View
                             </button>
                         </div>
@@ -91,7 +91,7 @@ const Portfolio = () => {
                     </div>
                 )}
                 <h1 className="page-title">
-                    <AnimatedLetters letterClass={letterClass} strArray={'portfolio'.split('')} idx={15} />
+                    <AnimatedLetters letterClass={letterClass} strArray={'Portfolio'.split('')} idx={15} />
                 </h1>
                 <div>{renderPortfolio()}</div>
             </div>

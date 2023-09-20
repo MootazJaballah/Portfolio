@@ -97,6 +97,12 @@
       }
     }
 
+    a.article-link {
+      &:after {
+        content: 'ARTICLES';
+      }
+    }
+
     a.active {
       svg {
         color: #ffd700;
