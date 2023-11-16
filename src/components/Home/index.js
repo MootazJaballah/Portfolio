@@ -34,7 +34,7 @@ const Home = () => {
     '.',
   ]
 
-  const engeneerArray = ['M', 'a', 'c', 'h', 'i', 'n', 'e', ' ', 'L', 'e', 'a', 'r', 'n', 'i', 'n', 'g', ' ', '&', ' ', 'D', 'a', 't', 'a', ' ', 'S', 'c', 'i', 'e', 'n', 'c', 'e', ' ', 'E', 'n', 'g', 'i', 'n', 'e', 'e', 'r'];
+  const engeneerArray = ['A', 'I', ' ', '&', ' ', 'D', 'a', 't', 'a', ' ', 'S', 'c', 'i', 'e', 'n', 'c', 'e', ' ', 'E', 'n', 'g', 'i', 'n', 'e', 'e', 'r'];
 
 
   useEffect(() => {

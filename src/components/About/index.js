@@ -32,7 +32,7 @@ const About = () => {
                         />
                     </h1>
                     <p align="LEFT">
-                        I graduated from ISIMM (Higher Institute of Computer Science and Mathematics) in Monastir. Currently, I am a second-year student pursuing a degree in artificial intelligence engineering. My specialization lies in both front-end and back-end development, as well as website creation. Furthermore, I possess strong skills in designing mobile applications and video games. In search of new opportunities, I am determined to leverage my knowledge and expertise to make a meaningful contribution in the field.
+                        As a graduate of the Higher Institute of Computer Science and Mathematics (ISIMM) in Monastir, I am currently advancing my education as a second-year student specializing in Artificial Intelligence and Data Science Engineering. My experience is well-rounded in the realm of software development, encompassing both front-end and back-end technologies, particularly as a MERN Stack developer. Additionally, I have developed a strong proficiency in designing mobile applications and video games. Eager to explore new opportunities, I am committed to applying my diverse skill set and knowledge to make a significant impact in the technology sector.
                     </p>
                 </div>
 
